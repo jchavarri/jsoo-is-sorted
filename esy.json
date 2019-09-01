@@ -8,13 +8,10 @@
   },
   "dependencies": {
     "@opam/dune": "*",
-    "@opam/gen_js_api": "*",
+    "@opam/gen_js_api": "LexiFi/gen_js_api:gen_js_api.opam#0743a4a",
     "ocaml": "~4.8.0"
   },
   "devDependencies": {
     "ocaml": "~4.8.0"
-  },
-  "resolutions": {
-    "@opam/gen_js_api": "LexiFi/gen_js_api:gen_js_api.opam#0743a4a"
   }
 }
