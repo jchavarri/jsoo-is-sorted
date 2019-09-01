@@ -7,5 +7,9 @@
 
 (rule
   (targets isSorted.ml)
-  (deps isSorted.mli)
-  (action (run %{bin:gen_js_api} %{deps})))
+  (deps isSorted.rei)
+  (action 
+    (progn
+      (with-stdout-to isSorted.ml.tmp (run %{bin:refmt} --parse=re -i true --print=ml %{deps}))
+      (run %{bin:gen_js_api} -o %{targets} isSorted.ml.tmp)
+    )))

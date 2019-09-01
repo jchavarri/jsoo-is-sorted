@@ -17,7 +17,7 @@ As mentioned above, this is not intended to be used. But if it was to be added t
 it would need both `esy.json` and `package.json`.
 
 1. Run `yarn add jsoo-is-sorted`.
-2. Add this line to `esy.json`: `"jsoo-is-sorted": "jchavarri/jsoo-is-sorted#2ea1ae0"` (esy [can't read](https://esy.sh/docs/en/concepts.html#support-for-esyjson) esy.json files from published npm packages)
+2. Run `esy add jsoo-is-sorted-esy`.
 3. Add the library to your dune file:
 
 ```dune
@@ -38,3 +38,16 @@ Or with Reason syntax:
 ```reason
 let foo = IsSorted.isSorted([|20, 3, 124|]);
 ```
+
+### Publishing
+
+Due to esy [not being able to read](https://esy.sh/docs/en/concepts.html#support-for-esyjson) `esy.json` files
+from published npm packages (this is to prevent downloading and unpacking all tarballs to do version resolution),
+the bindings are distributed in two packages.
+
+To publish:
+- Make sure both `esy.json` and `package.json` have the same version
+- Run `npm publish` normally
+- Delete `package.json`
+- Rename `esy.json` to `package.json`
+- Run `npm publish` again to publish `jsoo-is-sorted-esy`
