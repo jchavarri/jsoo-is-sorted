@@ -1,6 +1,6 @@
 {
   "name": "jsoo-is-sorted",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Js_of_ocaml bindings to is-sorted JavaScript library",
   "repository": {
     "type": "git",
