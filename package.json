@@ -1,0 +1,23 @@
+{
+  "name": "jsoo-is-sorted",
+  "version": "0.0.1",
+  "description": "Js_of_ocaml bindings to is-sorted JavaScript library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchavarri/jsoo-is-sorted"
+  },
+  "keywords": [
+    "ocaml",
+    "reasonml",
+    "js_of_ocaml"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jchavarri/jsoo-is-sorted/issues"
+  },
+  "homepage": "https://github.com/jchavarri/jsoo-is-sorted",
+  "dependencies": {
+    "is-sorted": "~1.0.5"
+  }
+}
