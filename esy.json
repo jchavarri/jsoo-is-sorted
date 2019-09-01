@@ -1,16 +1,14 @@
 {
   "name": "jsoo-is-sorted",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "description": "Js_of_ocaml bindings to is-sorted JavaScript library",
   "license": "MIT",
   "esy": {
-    "build": "refmterr dune build"
+    "build": "dune build"
   },
   "dependencies": {
     "@opam/dune": "*",
     "@opam/gen_js_api": "*",
-    "@esy-ocaml/reason": "*",
-    "refmterr": "*",
     "ocaml": "~4.8.0"
   },
   "devDependencies": {
