@@ -17,7 +17,7 @@ As mentioned above, this is not intended to be used. But if it was to be added t
 it would need both `esy.json` and `package.json`.
 
 1. Run `yarn add jsoo-is-sorted`.
-2. Run `esy add jsoo-is-sorted`.
+2. Add this line to `esy.json`: `"jsoo-is-sorted": "jchavarri/jsoo-is-sorted#2ea1ae0"` (esy [can't read](https://esy.sh/docs/en/concepts.html#support-for-esyjson) esy.json files from published npm packages)
 3. Add the library to your dune file:
 
 ```dune
